@@ -2,3 +2,5 @@
 %p= @pic.description
 
 = link_to "Back", root_path
+= link_to "Edit", edit_pic_path
+= link_to "delete", pic_path, method: :delete, data: { confirm: "are you sure?" }
